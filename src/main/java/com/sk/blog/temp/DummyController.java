@@ -2,6 +2,8 @@ package com.sk.blog.temp;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -51,6 +53,7 @@ public class DummyController {
 		return users;
 	}
 	
+	@Transactional
 	@PutMapping("/dummy/user/{id}")
 	public User updateUser(@PathVariable Long id, @RequestBody User requestUser) {
 		User targetUser = userRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("No Such UserId : "+id));
