@@ -1,0 +1,28 @@
+ManyToOne의 기본 전략은 Eager
+OneToMany의 기본 전략은 Lazy
+
+HTTP : 통신 규약 프로토콜 stateless
+HTTP 메서드
+	1. GET    : 데이터 조회
+	2. POST   : 데이터 삽입
+	3. DELETE : 데이터 삭제
+	4. PUT	  : 데이터 수정
+
+HTTP 통신
+Packet switching : 데이터를 패킷 단위로 나눠서 전송
+Circuit switching : 데이터 전체를 전송
+
+Mime-type : 전송 데이터가 어떤 데이터인지를 나타내는 것
+img/jpeg -> Header에 데이터의 타입에 대해 지정할때 사용
+
+연관관계 주인 : foreignkey를 가진 쪽이 연관관계의 주인이된다.
+
+JSON은 여러 언어 간 데이터 통신 과정에서 사용하는 공통의 언어
+JAVA -> JSON -> Python
+Python -> JSON -> JAVA 가능
+
+orElseGet => 없으면 별도로 생성해서 전달가능
+
+
+Spring boot는 MessageConverter 라는 애가 응답 시 작동하여 자바 오브젝트를 자동으로 Jackson 라이브러리를 호출해서 
+JSON으로 변경하여 전달해준다.
