@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ### npm_module ###
-src/main/resources/static/node_modules/
+src/main/resources/static/lit/node_modules/
