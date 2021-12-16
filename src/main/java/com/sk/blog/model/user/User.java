@@ -1,4 +1,4 @@
-package com.sk.blog.model;
+package com.sk.blog.model.user;
 
 import java.sql.Timestamp;
 
@@ -10,7 +10,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -48,4 +50,7 @@ public class User {
 	
 	@CreationTimestamp //시간이 자동으로 입력
 	Timestamp createDate;
+	
+	@Column
+	boolean enabled;
 }

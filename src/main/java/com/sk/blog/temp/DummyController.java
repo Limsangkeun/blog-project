@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sk.blog.model.ERole;
-import com.sk.blog.model.User;
+import com.sk.blog.model.user.ERole;
+import com.sk.blog.model.user.User;
 import com.sk.blog.repository.UserRepository;
 
 @RestController

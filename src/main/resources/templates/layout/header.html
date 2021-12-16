@@ -10,22 +10,25 @@
 		<nav class="py-2 bg-light border-bottom">
 			<div class="container d-flex flex-wrap">
 				<ul class="nav me-auto">
-					<li class="nav-item"><a href="/test"
-						class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-					<li class="nav-item"><a href="/test2"
-						class="nav-link link-dark px-2">Features</a></li>
+					<li class="nav-item"><a href="/"
+						class="nav-link link-dark px-2 active" aria-current="page">SKLOG</a></li>
+					<li class="nav-item"><a href="/std/detail"
+						class="nav-link link-dark px-2">Study</a></li>
 					<li class="nav-item"><a href="#"
-						class="nav-link link-dark px-2">Pricing</a></li>
+						class="nav-link link-dark px-2">Project</a></li>
+					<li class="nav-item" sec:authorize="isAuthenticated()"><a href="#"
+						class="nav-link link-dark px-2">Blog</a></li>
 					<li class="nav-item"><a href="#"
-						class="nav-link link-dark px-2">FAQs</a></li>
-					<li class="nav-item"><a href="#"
-						class="nav-link link-dark px-2">About</a></li>
+						class="nav-link link-dark px-2">Contact</a></li>
 				</ul>
 				<ul class="nav">
-					<li class="nav-item"><a href="/user/login"
+					<li class="nav-item" sec:authorize="!isAuthenticated()"><a href="/user/login"
 						class="nav-link link-dark px-2">Sign in</a></li>
-					<li class="nav-item"><a href="/user/join"
+					<li class="nav-item" sec:authorize="!isAuthenticated()"><a href="/user/join"
 						class="nav-link link-dark px-2">Sign up</a></li>
+					<li class="nav-item" sec:authorize="isAuthenticated()"><a href="/user/logout"
+						class="nav-link link-dark px-2">Logout</a></li>
+						
 				</ul>
 			</div>
 		</nav>

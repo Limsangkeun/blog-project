@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}"> 
+<head>
+<meta charset="UTF-8"> 
+</head>
+<body>
+	<div class="container minus-header" layout:fragment="content">
+		<title-bar title="게시판 상세">
+			<button>저장</button>
+			<button>수정</button>
+			<button>삭제</button>
+		</title-bar>
+		<web-editor></web-editor>
+		<div id="editor"></div>
+	</div>
+</body>
+</html>
